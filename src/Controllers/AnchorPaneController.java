@@ -29,25 +29,6 @@ import javafx.scene.shape.Rectangle;
 public class AnchorPaneController implements Initializable {
 
     @FXML
-    private Rectangle rect1;
-    @FXML
-    private Rectangle rect2;
-    @FXML
-    private Rectangle rect3;
-    @FXML
-    private Rectangle rect4;
-    @FXML
-    private Rectangle rect5;
-    @FXML
-    private Rectangle rect6;
-    @FXML
-    private Rectangle rect7;
-    @FXML
-    private Rectangle rect8;
-    @FXML
-    private Rectangle rect9;
-/////
-    @FXML
     private Label label1;
     @FXML
     private Label label2;
@@ -66,15 +47,22 @@ public class AnchorPaneController implements Initializable {
     @FXML
     private Label label9;
 
+    @FXML
+    private Button gracz;
+    @FXML
+    private Button komputer;
+
     /**
      * Initializes the controller class.
      */
     @FXML
     void click1(MouseEvent event) {
-        if (label1.getText() == " ") {
+        if (label1.getText() == " " && kolejka == true) {
             label1.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
@@ -82,10 +70,12 @@ public class AnchorPaneController implements Initializable {
 
     @FXML
     void click2(MouseEvent event) {
-        if (label2.getText() == " ") {
+        if (label2.getText() == " " && kolejka == true) {
             label2.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
@@ -93,10 +83,12 @@ public class AnchorPaneController implements Initializable {
 
     @FXML
     void click3(MouseEvent event) {
-        if (label3.getText() == " ") {
+        if (label3.getText() == " " && kolejka == true) {
             label3.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
@@ -104,10 +96,12 @@ public class AnchorPaneController implements Initializable {
 
     @FXML
     void click4(MouseEvent event) {
-        if (label4.getText() == " ") {
+        if (label4.getText() == " " && kolejka == true) {
             label4.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
@@ -115,10 +109,12 @@ public class AnchorPaneController implements Initializable {
 
     @FXML
     void click5(MouseEvent event) {
-        if (label5.getText() == " ") {
+        if (label5.getText() == " " && kolejka == true) {
             label5.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
@@ -126,10 +122,12 @@ public class AnchorPaneController implements Initializable {
 
     @FXML
     void click6(MouseEvent event) {
-        if (label6.getText() == " ") {
+        if (label6.getText() == " " && kolejka == true) {
             label6.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
@@ -137,19 +135,25 @@ public class AnchorPaneController implements Initializable {
 
     @FXML
     void click7(MouseEvent event) {
-        if (label7.getText() == " ") {
+        if (label7.getText() == " " && kolejka == true) {
             label7.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
+        } else {
+            alert();
         }
     }
 
     @FXML
     void click8(MouseEvent event) {
-        if (label8.getText() == " ") {
+        if (label8.getText() == " " && kolejka == true) {
             label8.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
@@ -157,14 +161,18 @@ public class AnchorPaneController implements Initializable {
 
     @FXML
     void click9(MouseEvent event) {
-        if (label9.getText() == " ") {
+        if (label9.getText() == " " && kolejka == true) {
             label9.setText("O");
             sprawdzWynik();
             computerMove();
+        } else if (kolejka == false) {
+            alert2();
         } else {
             alert();
         }
     }
+
+    public boolean kolejka = false;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -177,10 +185,19 @@ public class AnchorPaneController implements Initializable {
         label7.setText(" ");
         label8.setText(" ");
         label9.setText(" ");
+
+        komputer.setOnAction((ActionEvent event) -> {
+            kolejka = true;
+            computerMove();
+        });
+
+        gracz.setOnAction((ActionEvent event) -> {
+            kolejka = true;
+        });
     }
 
     private void computerMove() {
-        
+
         sprawdzWynik();
 
         //konczenie po prawej stronie
@@ -476,7 +493,7 @@ public class AnchorPaneController implements Initializable {
         if (label6.getText() == "O" && label1.getText() == "O") {
             label3.setText("X");
             return;
-        } 
+        }
 
     }
 
@@ -526,6 +543,13 @@ public class AnchorPaneController implements Initializable {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Uwaga");
         alert.setHeaderText("To pole jest zajete, wybierz inne");
+        alert.showAndWait();
+    }
+
+    public void alert2() {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Uwaga");
+        alert.setHeaderText("Wybierz kto zaczyna gre");
         alert.showAndWait();
     }
 }
