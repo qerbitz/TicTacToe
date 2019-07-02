@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AnchorPaneController">
+   <children>
+      <Line endX="150.0" layoutX="168.0" layoutY="124.0" startX="-150.0" />
+      <Line endY="150.0" layoutX="118.0" layoutY="174.0" startY="-150.0" />
+      <Line endY="150.0" layoutX="218.0" layoutY="174.0" startY="-150.0" />
+      <Line endX="150.0" layoutX="168.0" layoutY="224.0" startX="-150.0" />
+      <Rectangle fx:id="rect7" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="19.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label7" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="25.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click7" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect8" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="119.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label8" alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="25.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click8" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect9" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="219.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label9" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="24.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click9" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="18.0" layoutY="125.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label4" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="125.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click4" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="119.0" layoutY="125.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label5" alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="126.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click5" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect6" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="219.0" layoutY="125.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label6" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="125.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click6" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="19.0" layoutY="225.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="225.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click1" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="119.0" layoutY="225.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="225.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click2" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="219.0" layoutY="225.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+      <Label fx:id="label3" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="225.0" maxHeight="98.0" maxWidth="98.0" minHeight="98.0" minWidth="98.0" onMouseClicked="#click3" prefHeight="98.0" prefWidth="98.0">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
